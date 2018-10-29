@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Your Choice. Your Taste</title>
+		<script>
+		function swapStyleSheet(sheet) {
+    document.getElementById("pagestyle").setAttribute("href", sheet);  
+}
+	function contact_show() {
+	document.getElementById('contactoverlay').style.display = 'block';
+	document.getElementById('gototop').style.display = 'none';
+	
+	}
+	function contact_hide() {
+	document.getElementById('contactoverlay').style.display = 'none';
+	document.getElementById('gototop').style.display = 'block';
+	}
+</script>
+
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="files/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="files/scroll.js"></script>
+	</head>
+	<body>
+	<button id="stylesheet1" onclick="swapStyleSheet('files/style.css')"> Normaal </button>
+    <button id="stylesheet2" onclick="swapStyleSheet('files/kerst.css')"> Kerst </button>
+			<section id="slide2" class="slide">
+	</section>
+	
+		<header>
+		
+		<h1>Stars</h1>
+		<p>Your Choice. Your Taste.</p>
+		</header>
+	
+			
+		
+
+		<a href="#slide2" id="gototop"><i class="fas fa-chevron-up"></i></a>
+		<a onclick="contact_show()" id="contactus"><i class="far fa-edit"></i></a>
+
+
+	<main>
+<section id="contactoverlay">
+			<article>
+					<a onclick="contact_hide()" id="closecontact"><i class="far fa-times-circle"></i></a>
+			       <form id="beoordeling" action="index.html" method="get">
+		<fieldset>
+		<legend><b>Jouw gegevens</b></legend>
+			<label for="naam"><p>Naam *</p></label>
+			<input type="text" id="naam" placeholder="Vul hier je naam in"  required>
+			
+			<label for="email"><p>Email</p></label>
+			<input type="email" id="email" placeholder="Email@provider.com">
+
+	<label for="postcode"><p>Postcode</p></label>
+	<input type="text" id="postcode" pattern="[0-9]{4}\s[A-Z]{2}" placeholder="3202 VW" title="Een postcode bestaat uit 4 cijfers, opgevold door een spatie en 2 hoofdletters.">
+		</fieldset>
+		<fieldset>
+		<legend><b>Bericht</b></legend>
+		  <textarea id="toevoeging" name="toevoeging" rows="5">
+		  </textarea>
+		  </fieldset>
+		  <fieldset>
+		  <legend><b>Alles ingevuld?</b></legend>
+		  <button value="Verzenden">Contact opnemen</button>
+		  </fieldset>
+		  
+		  
+		  
+		  </form>
+			</article>
+</section>
+<section id="info">
+			<article>
+				<h2>Restaurant & Terras</h2>
+											<i id="slide4" class="slide">
+	</i>
+				<p>
+				Een eerlijk restaurant waar kwalitatieve gerechten worden bereid, heeft altijd een goede voorbereiding. Zo wordt in Stars uren voor opening de kip en spare- ribs gemarineerd en het deeg gekneed. Ook de kaas, groente en fruit worden in eigen keuken gesneden.
+				</p>
+<p>Dit betekent voor u dat niets industrieël wordt voorbereid en alles dus vers is. 
+De ingrediënten blijven daardoor vol van smaak. Kijk voor alle gerechten onze menukaart door.</p>
+<p>
+De keuken van Stars gaat iedere dag open om 17:00 (maandags gesloten). Echter voordat de keuken open gaat zijn de koks al uren bezig met het voorbereiden, wist u dat: </p>
+<ul>
+<li>elke dag in eigen keuken deeg wordt gemaakt voor pizza’s en stokbroden;</li>
+<li>elke dag verse groente gesneden wordt voor salades, pizza’s en overige gerechten;</li>
+<li>meerdere malen per week volgens eigen recept sauzen, dressing en kruidenboter gemaakt wordt;</li>
+<li>meerdere malen per week vers vlees bij de slager wordt besteld en volgens eigen recept gemarineerd wordt;</li>
+<li>de shoarma besteld wordt bij de beste shoarma bereider van Nederland;</li>
+<li>er kaas en vlees geïmporteerd wordt uit Italië;</li>
+<li>er sauzen en kruiden geïmporteerd worden uit Mexico.</li>
+</ul>
+<p>
+Kom daarom gezellig een hapje eten en drinken op onze sfeervolle terras aan de haven of in ons restaurant. U bent van harte welkom.
+				</p>
+			</article>
+		</section>
+
+<section id="maps">
+		<h2>Bezoek ons</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.089254987683!2d4.12704831574902!3d51.82279997968818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c451cad7499edd%3A0xd4837d69e99b5183!2sStars!5e0!3m2!1snl!2snl!4v1538465763946" style="border:0" allowfullscreen></iframe>
+		<p><a target="_blank" href="https://www.google.com/maps/place/Stars/@51.8228,4.129237,17z/data=!4m8!1m2!3m1!2sStars!3m4!1s0x0:0xd4837d69e99b5183!8m2!3d51.8228!4d4.1292373" class="icon-Naamloos"></a></p>
+		</section>
+
+		<section id="ijssalon">
+			
+			<article>
+				<h2>Ijssalon</h2>
+								<i id="slide1" class="slide">
+	</i>
+				<p>Elke zomer gaat de ijssalon van Stars open om het lekkerste softijs, schepijs en ijscoupes voor u te maken. Ons schepijs wordt dagelijks geleverd door de IJswinckel in Hellevoetsluis en het fruit voor onze ijscoupes wordt zelf schoongemaakt en gesneden. Maar we bieden nog veel meer, wist u dat:</p>
+<ul>
+<li>elke maand een bijzondere smaak wordt bereid als ijs van de maand;</li>
+<li>de slagroommachine het heerlijkste slagroom op klopt;</li>
+<li>de ijssalon tot 22:00 open is; </li>
+<li>u op ons terras van uw ijs kunt genieten; </li>
+<li>u de hele jaar door ijs kunt laten bezorgen.</li>
+</ul>
+<p>Deze en nog veel meer redenen om langs te komen voor ijs bij Stars!</p>
+			</article>
+		
+
+		</section>
+		</main>
+		<footer>
+		<article id="contact">
+		<h2>Contact</h2>
+		<p><b>Adres</b><br>
+		Oostzanddijk 6, 3221 AL<br>
+		Hellevoetsluis</p>
+		<p><b>Telefoon</b><br>
+		0181 - 316836</p>
+		<p><b>Email</b><br>
+		info@stars.nl</p>
+		</article>
+		<article class="openingstijden">
+		<h2>Openingstijden</h2>
+		<p><b>Maandag</b><br>
+		Gesloten</p>
+		<p><b>Dinsdag</b><br>
+		17:00 - 21:00</p>
+		<p><b>Woensdag</b><br>
+		17:00 - 21:00</p>
+		<p><b>Donderdag</b><br>
+		17:00 - 21:00</p>
+		<p><b>Vrijdag</b><br>
+		17:00 - 22:00</p>
+		<p><b>Zaterdag</b><br>
+		17:00 - 22:00</p>
+		<p><b>Zondag</b><br>
+		17:00 - 21:00</p>
+		</article>
+		</footer>
+	</body>
+	
